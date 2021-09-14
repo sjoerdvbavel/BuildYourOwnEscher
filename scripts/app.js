@@ -3,7 +3,6 @@ import Graph from './components/graph'
 import Controls from './components/controls';
 import EscherCircle from './components/eschercircle';
 
-
 export default class App extends React.Component {
   state = {
     dataSetIndex: 0,
@@ -29,7 +28,7 @@ export default class App extends React.Component {
     });
 
     return (
-      <div>
+      <div className="p-3">
       <div className="Container">
         <div className="row">
 
