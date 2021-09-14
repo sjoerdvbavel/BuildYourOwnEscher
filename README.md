@@ -1,7 +1,7 @@
-Generating SVG With React
+Build your own Escher
 =====================
 
-Sample code for my Smashing Magazine article: [Generating SVG With React](http://www.smashingmagazine.com/2015/12/generating-svg-with-react).
+A small react project to allow a friend to pick his own colors for a poster.
 
 ### Usage
 
