@@ -1,5 +1,5 @@
 import React from 'react';
-//import Generation from './generation';
+import Generation from './generation';
 
 export default class EscherCircle extends React.Component {
   static defaultProps = { 
@@ -23,7 +23,9 @@ GenerateGenerations(){}
           cx={radius}
           cy={radius}
           fill={this.props.colorcircle}
-        />
+        >
+          {/* <Generation/> */}
+        </circle>
       </svg>
     )
   }

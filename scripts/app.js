@@ -17,8 +17,28 @@ export default class App extends React.Component {
   selectDataset(event) {
     this.setState({ dataSetIndex: event.target.value });
   }
+  handleChangeColor1 = (color) => {
+    console.log("Changed color1 to " + color.hex);
+    this.setState({ color1: color.hex });
+  }
+  handleChangeColor2 = (color) => {
+    console.log("Changed color2 to " + color.hex);
+    this.setState({ color2: color.hex });
+  }
+  handleChangeColor3 = (color) => {
+    console.log("Changed color3 to " + color.hex);
+    this.setState({ color3: color.hex });
+  }
+  handleChangeColor4 = (color) => {
+    console.log("Changed color4 to " + color.hex);
+    this.setState({ color4: color.hex });
+  }
+  handleChangeColorVlinder = (color) => {
+    console.log("Changed colorVlinder to " + color.hex);
+    this.setState({ colorVlinder: color.hex });
+  }
   handleChangeColorCircle = (color) => {
-    console.log("test");
+    console.log("Changed color circle to " + color.hex);
     this.setState({ colorcircle: color.hex });
   }
 
@@ -37,7 +57,12 @@ export default class App extends React.Component {
           colorcircle={this.state.colorcircle} 
         />
         <Controls 
-          colorcircle={this.state.colorcircle} 
+          colorcircle={this.state.colorcircle}
+          handleChangeColor1 = {this.handleChangeColor1}
+          handleChangeColor2 = {this.handleChangeColor2}
+          handleChangeColor3 = {this.handleChangeColor3}
+          handleChangeColor4 = {this.handleChangeColor4}
+          handleChangeColorVlinder = {this.handleChangeColorVlinder}
           handleChangeColorCircle = {this.handleChangeColorCircle}
         />
         </div>
